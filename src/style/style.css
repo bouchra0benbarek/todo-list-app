@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #fdfdfd;
+    background-color: #c02323;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -115,11 +115,21 @@ margin-left: 67%;
     padding: 0px 30px 0px 30px;
     box-shadow: 0px 0.3px 12px #e4e4e4a8;
     background-color: #ffff;
+    border-right: 1px solid #e1e1e1;
 }
-
+.dp-profile{
+    background-color: #fff;
+    position: absolute;
+    width: 221px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    right: 25px;
+    box-shadow: 0px 0px 13px #dfdfdf;
+    padding:0px 25px 0px 25px;
+}
 .logo-side-bar img{
-    height: 65px;
-    width: 35px;
+    width: 100px;
 }
 
 .logo-side-bar{
@@ -127,14 +137,13 @@ margin-left: 67%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
     margin-top: 10px;
     padding-right: 10px;
 }
 
 .menu{
-    height: 23px;
-    color: #646262;
+    height: 30px;
+    color: #020202;
     cursor: pointer;
 }
 
@@ -144,42 +153,57 @@ margin-left: 67%;
     padding: 15px;
     cursor: pointer;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 35px;
     border: 0;
     background-color: #ffff;
-    font-size: 15px;
+    font-size: 19px;
+    margin-bottom: 20px;
+    justify-content: space-between;
 }
-
+.item:hover{
+    background-color: #D8E0FA;
+}
+.item:active{
+    background-color: #D8E0FA;
+}
 .item span{
     margin-left: 16px;
 }
-
+.navitem{
+    display:flex;
+    align-items: center;
+}
+.item .count{
+    font-size: 16px;
+    color: #707070;
+}
 #icon{
     color: #070707;
     width: 30px;
-    height: 20px;
+    height: 25px;
 
 }
 
 .navbar{
-    background-color: #007feb;
+    background-color: #feffff;
     height: 50px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 30px;
+    padding: 10px 30px 10px 0px;
     color: white;
     font-size: 20px;
+    border-bottom: 1px solid #e1e1e1;
+    cursor: pointer;
 }
 .usericon{
-    border-radius: 20px;
-    height: 30px;
-    width: 30px;
-    border: 1px solid black;
+    border-radius: 44px;
+    height: 40px;
+    width: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 450px;
+    background: url("https://i.pinimg.com/236x/e3/2d/4b/e32d4bc7380200161e697c1ef2434573.jpg") no-repeat center;
 }
 
 .sidebar-collapsed{
@@ -191,6 +215,11 @@ margin-left: 67%;
     position: fixed;
     box-shadow: 0px 0.3px 12px #e4e4e4a8;
     background-color: #ffff;
+    border-right: 1px solid #e1e1e1;
+}
+
+.sidebar-collapsed .item{
+    justify-content: center;
 }
 
 .sidebar-collapsed .logo-side-bar{
@@ -206,15 +235,27 @@ margin-left: 67%;
 
 .container{
     display: flex;
-    margin-left: 80px;
-    width: 300px;
+    margin-left:22%;
+    width: 100%;
     background-color: #ffff;
     height: 100%;
-    position: fixed;
     border-right: 1px solid #efefef;
     flex-direction: column;
+    
+}
+.new-task{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    overflow-y: scroll;
+}
+.new-task input,.new-task input::placeholder {
+    border: 0px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: #4772fa;
+    width: 70%;
+    height: 33px;
+    outline: 0px;
 }
 
 .todo{
